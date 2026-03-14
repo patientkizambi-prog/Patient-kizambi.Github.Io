@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> inscription </title>
+    </head>
+    <body>
+    <h1> BIENVÉNU SUR LE PORTAIL D'INDCRIPTION</h1>  </head>
+
+    <!-- FORMULAIRE -->
+    <div id="formulaire">
+        <h3>Inscription </h3>
+
+        <input type="text" id="nom" placeholder="Nom">
+        <input type="text" id="postnom" placeholder="Post-nom">
+        <input type="email" id="email" placeholder="Adresse Email">
+        <input type="password" id="code" placeholder="Code">
+
+ <button> s'inscrire</button>
+    </div>
+
+    <!-- CONTENU DU SITE (CACHÉ AU DÉBUT) -->
+    <div id="contenu" style="display:none;">
+        <h2>Félicitation! 🎉</h2>
+        <p>maintenant vous avez un compte pacifique.</p>
+  
+</div>
+
+
+    <script>
+        function validerInscription() {
+            var nom = document.getElementById("nom").value;
+            var postnom = document.getElementById("postnom").value;
+            var email = document.getElementById("email").value;
+            var code = document.getElementById("code").value;
+
+            if(nom === "" || postnom === "" || email === "" || code === "") {
+                alert("Veuillez remplir tous les champs !");
+            } else {
+                document.getElementById("formulaire").style.display = "none";
+                document.getElementById("contenu").style.display = "block";
+            }
+        }
+    </script>
+    
+<p><a href="page d'accueil.html">Retour à l'accueil</a></p>
+</body>
+</html>
+</body>
+</html>
