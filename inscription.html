@@ -15,6 +15,25 @@
         <input type="text" id="postnom" placeholder="Post-nom">
         <input type="email" id="email" placeholder="Adresse Email">
         <input type="password" id="code" placeholder="Code">
+      <form onsubmit="return envoyerFormulaire()">
+
+<input type="text" placeholder="Nom" required>
+<br><br>
+
+<input type="email" placeholder="Email" required>
+<br><br>
+
+<button type="submit">Envoyer</button>
+
+</form>
+
+<script>
+function envoyerFormulaire(){
+alert("Félicitations pour votre inscription !");
+window.location.href = "index.html";
+return false;
+}
+</script>
 
  <button> s'inscrire</button>
     </div>
